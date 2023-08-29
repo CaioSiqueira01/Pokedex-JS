@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
 .menu__content input {
@@ -157,6 +158,9 @@
 }
 
 @media  screen and (min-width: 370px) {
+    .menu__content {
+        flex-direction: row;
+    }
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
